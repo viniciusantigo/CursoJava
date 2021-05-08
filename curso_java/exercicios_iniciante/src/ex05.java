@@ -21,6 +21,7 @@ public class ex05 {
 
         total = p1 * val1 + p2 * val2;
 
+        System.out.printf("CÓDIGO DOS PRODUTOS: %d, %d%n", cod1, cod2);
         System.out.printf("VALOR A PAGAR: R$ %.2f", total);
 
         sc.close();
