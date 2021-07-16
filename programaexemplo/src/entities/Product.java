@@ -9,7 +9,7 @@ public class Product {
         public double totalValueInStock() {
             return price * quantity;
         }
-
+            
         public void addProducts(int quantity){
             this.quantity += quantity;
         }
@@ -19,6 +19,6 @@ public class Product {
         }
 
         public String toString(){
-            return name;
+            return name + ", $" + String.format("%.2f", price) + ", " + quantity + " units, Total: $ " + String.format("%.2f", totalValueInStock());
         }
     }
